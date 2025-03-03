@@ -8,8 +8,8 @@ const Navbar = () => {
             <div className='space-x-6'>
                 <a href="#home" className='hover:text-gray-400'>Home</a>
                 <a href="#About" className='hover:text-gray-400'>About</a>
-                <a href="#Services" className='hover:text-gray-400'>Services</a>
-                <a href="#Projects" className='hover:text-gray-400'>Projects</a>
+                <a href="#Project" className='hover:text-gray-400'>Project</a>
+                <a href="#Experience" className='hover:text-gray-400'>Works Expreience</a>
                 <a href="#Contacts" className='hover:text-gray-400'>Contacts</a>
             </div>
             <button className='bg-gradient-to-r from-green-400 to-blue-500 hidden md:inline

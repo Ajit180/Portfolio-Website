@@ -4,13 +4,13 @@ import { FaEnvelope, FaMapMarked, FaMapMarkedAlt, FaPhone } from "react-icons/fa
 
 const Contact = () => {
   return (
-    <div className="bg-black text-white py-20" id="About">
+    <div className="bg-black text-white py-20" id="Contact">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Contact</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
          
           <div className="flex-1">
-               <h3>Let's Talk</h3>
+               <h3 >Let's Talk</h3>
                <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to say hello!</p>
                <div className="mb-4 mt-8">
                    <FaEnvelope className="inline-block text-green-400 mr-2"></FaEnvelope>

@@ -9,7 +9,7 @@ const IconNavbar = () => {
     <nav className="bg-black text-white p-4 fixed w-full z-10">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold">My Portfolio</h1>
+        <h1 className="text-2xl font-bold">Ajit Yadav</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-lg">

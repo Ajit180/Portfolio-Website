@@ -14,7 +14,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
+    <>
         {/* <Navbar/> */}
         <IconNavbar/>
         <Hero/>
@@ -22,7 +22,7 @@ const App = () => {
         <Project/>
         <Contact/>
         <Footer/>
-    </div>
+    </>
   )
 }
 

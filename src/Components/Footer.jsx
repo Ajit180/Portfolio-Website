@@ -13,7 +13,7 @@ const Footer = () => {
               Development
             </p>
           </div>
-          <div className="flex-1 w-full">
+          {/* <div className="flex-1 w-full">
             <form className="flex items-center justify-center">
                 <input type="email" placeholder="Enter Email"
                 className="w-full p-2 rounded bg-gray-800 border border-gray-600 
@@ -23,7 +23,7 @@ const Footer = () => {
                  px-4 py-2 rounded-r-lg"
                 >Subscribe</button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="border-t border-gray-600 pt-4 flex flex-col md:flex-row
         justify-between items-center">
@@ -31,11 +31,11 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} All rights reserved.
             </p>
             <div className="flex space-x-4 my-4 md:my-0">
-                <a href="" className="text-gray-400 hover:text-white">
+                <a href="https://www.linkedin.com/in/ajit180/" className="text-gray-400 hover:text-white">
                     <FaLinkedin/>
                     
                 </a>
-                <a href="" className="text-gray-400 hover:text-white">
+                <a href="https://github.com/Ajit180" className="text-gray-400 hover:text-white">
                     <FaGithub/>
                 </a>
                 <a href="" className="text-gray-400 hover:text-white">

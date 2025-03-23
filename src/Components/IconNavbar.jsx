@@ -20,9 +20,9 @@ const IconNavbar = () => {
           <a href="#About" className="flex items-center space-x-2 hover:text-blue-400">
             <FaUser /> <span>About</span>
           </a>
-          <a href="#experience" className="flex items-center space-x-2 hover:text-blue-400">
+          {/* <a href="#experience" className="flex items-center space-x-2 hover:text-blue-400">
             <MdWork /> <span>Experience</span>
-          </a>
+          </a> */}
           <a href="#Project" className="flex items-center space-x-2 hover:text-blue-400">
             <FaProjectDiagram /> <span>Projects</span>
           </a>
@@ -46,9 +46,9 @@ const IconNavbar = () => {
           <a href="#about" className="flex justify-center items-center space-x-2 hover:text-blue-400">
             <FaUser /> <span>About</span>
           </a>
-          <a href="#experience" className="flex justify-center items-center space-x-2 hover:text-blue-400">
+          {/* <a href="#experience" className="flex justify-center items-center space-x-2 hover:text-blue-400">
             <MdWork /> <span>Experience</span>
-          </a>
+          </a> */}
           <a href="#projects" className="flex justify-center items-center space-x-2 hover:text-blue-400">
             <FaProjectDiagram /> <span>Projects</span>
           </a>

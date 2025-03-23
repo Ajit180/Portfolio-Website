@@ -1,7 +1,7 @@
 import React from "react";
 import messageslackimage from '../assets/message-Slack.png'
 import EdutechImage from '../assets/edu-website.png'
-import WeatherImage from '../assets/Weather-App.png'
+import cryptoImage from '../assets/crypto-track.png'
 
 const Project = () => {
    
@@ -11,42 +11,26 @@ const Project = () => {
           name: "Messaging Slack",
           technologies: ["React.js", "Node.js", "Express", "MongoDB", "Socket.IO", "AWS S3"],
           image: messageslackimage,  // Update with actual image path
-          githubLink: "https://github.com/yourusername/messaging-slack",
-          liveLink:"https:vercel/app.com"
+          githubLink: "https://github.com/Ajit180/Frontend-Message-Slack",
+          liveLink:"https://frontend-message-slack.vercel.app/auth/signin"
         },
         {
           id: 2,
           name: "Edutech Website",
           technologies: ["HTML", "CSS", "JavaScript"],
           image: EdutechImage,  // Update with actual image path
-          githubLink: "https://github.com/yourusername/edutech-website",
-          liveLink:"https:vercel/app.com"
+          githubLink: "https://github.com/Ajit180/EduTech-Project",
+          liveLink:"https://ajit180.github.io/EduTech-Project/"
         },
+      
         {
-          id: 3,
-          name: "Weather App",
-          technologies: ["HTML", "CSS", "Javascript","API"],
-          image: WeatherImage,  // Update with actual image path
-          githubLink: "https://github.com/yourusername/portfolio",
-          liveLink:"https:vercel/app.com"
-        },
-        {
-            id: 4,
+            id: 3,
             name: "Crypto Tracker",
             technologies: ["React", "Taiwind", "API"],
-            image: WeatherImage,  // Update with actual image path
-            githubLink: "https://github.com/yourusername/portfolio",
-            liveLink:"https:vercel/app.com"
+            image: cryptoImage,  // Update with actual image path
+            githubLink: "https://github.com/Ajit180/Crypto-Tracker",
+            liveLink:"https://crypto-tracker-three-sigma.vercel.app/"
           },
-          {
-            id: 4,
-            name: "Movie App",
-            technologies: ["React", "Taiwind", "API"],
-            image: WeatherImage,  // Update with actual image path
-            githubLink: "https://github.com/yourusername/portfolio",
-            liveLink:"https:vercel/app.com"
-
-          }
       ];
       
       

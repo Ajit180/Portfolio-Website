@@ -1,5 +1,6 @@
 
 import About from './Components/About'
+import AboutSection from './Components/AboutSection'
 import Contact from './Components/Contact'
 import Experiance from './Components/Experiance'
 import Footer from './Components/Footer'
@@ -19,7 +20,6 @@ const App = () => {
         <Hero/>
         <About/>
         <Project/>
-        <Experiance/>
         <Contact/>
         <Footer/>
     </div>

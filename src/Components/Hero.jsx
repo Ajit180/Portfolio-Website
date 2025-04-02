@@ -1,7 +1,12 @@
 import React from "react";
-import heroimage from "../assets/hero.jpg";
+import heroimage from "../assets/Hero.png";
 
 const Hero = () => {
+
+  const email = 'yajit1908@gmail.com';
+  const handleonClick =()=>{
+    window.location.href = `mailto:${email}`;
+  }
   return (
     <div className="bg-black text-white text-center py-18" id="Home">
       <img
@@ -24,7 +29,7 @@ const Hero = () => {
         <button
           className="bg-gradient-to-r from-green-400 to-blue-500 
       transform transition-transform duration-300 hover:scale-105 
-      px-4 py-2 rounded-full w-auto md:w-auto"
+      px-4 py-2 rounded-full w-auto md:w-auto" onClick={handleonClick}
         >
           Contact Me
         </button>

@@ -8,6 +8,8 @@ import Hero from './Components/Hero'
 import IconNavbar from './Components/IconNavbar'
 import Navbar from './Components/Navbar'
 import Project from './Components/Project'
+import TechStack from './Components/TechStack'
+import TechStackSVG from './Components/TechStackSVG'
 import './index.css'
 
 import React from 'react'
@@ -20,6 +22,8 @@ const App = () => {
         <Hero/>
         <About/>
         <Project/>
+        {/* <TechStack/> */}
+        <TechStackSVG/>
         <Contact/>
         <Footer/>
     </>

@@ -16,6 +16,14 @@ const Project = () => {
         },
         {
           id: 2,
+          name: "Crypto Tracker",
+          technologies: ["React", "Taiwind", "API"],
+          image: cryptoImage,  // Update with actual image path
+          githubLink: "https://github.com/Ajit180/Crypto-Tracker",
+          liveLink:"https://crypto-tracker-three-sigma.vercel.app/"
+        },
+        {
+          id: 3,
           name: "Edutech Website",
           technologies: ["HTML", "CSS", "JavaScript"],
           image: EdutechImage,  // Update with actual image path
@@ -23,14 +31,6 @@ const Project = () => {
           liveLink:"https://ajit180.github.io/EduTech-Project/"
         },
       
-        {
-            id: 3,
-            name: "Crypto Tracker",
-            technologies: ["React", "Taiwind", "API"],
-            image: cryptoImage,  // Update with actual image path
-            githubLink: "https://github.com/Ajit180/Crypto-Tracker",
-            liveLink:"https://crypto-tracker-three-sigma.vercel.app/"
-          },
       ];
       
       

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHtml5,FaCss3 } from "react-icons/fa";
 
 
 const AboutSection = () => {
@@ -15,33 +14,9 @@ const AboutSection = () => {
         </div>
   
         {/* Right Side - Technologies */}
+        
         <div className="md:w-1/2 grid grid-cols-3 gap-6 justify-center text-center">
-          {/* Each tech icon with label */}
-          <div className="flex flex-col items-center">
-          <FaHtml5 className="bg-blue-400 w-12 h-12" size={60}/>
-          <span className="text-sm mt-2 text-white">HTML</span>
-          </div>
-          <div className="flex flex-col items-center">
-            {/* <img src="/icons/css.svg" alt="CSS" className="w-12 h-12" /> */}
-            <FaCss3 className="bg-blue-500" size={60} />
-            <span className="text-sm mt-2 text-white">CSS</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/icons/javascript.svg" alt="JavaScript" className="w-12 h-12" />
-            <span className="text-sm mt-2">JavaScript</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/icons/react.svg" alt="React" className="w-12 h-12" />
-            <span className="text-sm mt-2">React.js</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/icons/nodejs.svg" alt="Node.js" className="w-12 h-12" />
-            <span className="text-sm mt-2">Node.js</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/icons/mongodb.svg" alt="MongoDB" className="w-12 h-12" />
-            <span className="text-sm mt-2">MongoDB</span>
-          </div>
+        
         </div>
       </section>
     );

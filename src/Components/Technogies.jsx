@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 
 const technologies = [

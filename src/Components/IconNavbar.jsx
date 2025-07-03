@@ -1,12 +1,15 @@
-import { FaHome, FaUser, FaEnvelope, FaProjectDiagram } from "react-icons/fa"; 
-import { AiOutlineMenu } from "react-icons/ai"; 
+import { FaHome, FaUser, FaEnvelope, FaProjectDiagram, FaSun, FaMoon } from "react-icons/fa"; 
+import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
+import useThemeStore from "../store/ThemeChange";
 
 const IconNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isDark = useThemeStore((state) => state.isDark);
+  const toggleTheme = useThemeStore((state) => state.toggleTheme);
 
   return (
-    <nav className="bg-black text-white p-4 fixed w-full z-10">
+    <div className={"p-4 w-full z-10"}>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold">Ajit Yadav</h1>
@@ -28,6 +31,15 @@ const IconNavbar = () => {
           <a href="#Contact" className="flex items-center space-x-2 hover:text-blue-400">
             <FaEnvelope /> <span>Contact</span>
           </a>
+          {/* Theme Toggle */}
+          <button
+             onClick={toggleTheme}
+              className="p-2 rounded-full hover:text-blue-400"
+                title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+               >
+              {isDark ? <FaSun size={20} /> : <FaMoon size={20} />}
+          </button>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -56,7 +68,7 @@ const IconNavbar = () => {
           </a>
         </div>
       )}
-    </nav>
+    </div>
   );
 };
 

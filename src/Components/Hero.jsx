@@ -8,7 +8,7 @@ const Hero = () => {
     window.location.href = `mailto:${email}`;
   }
   return (
-    <div className="bg-black text-white text-center py-18" id="Home">
+    <div className="text-center py-18" id="Home">
       <img
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
        transition-transform duration-300 hover:scale-105"
@@ -34,7 +34,7 @@ const Hero = () => {
           Contact Me
         </button>
 
-        <a href="https://drive.google.com/file/d/17ptSquFYww0D0KpBIlfJMdngm_2oAymC/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/15gXkQbkGkumqMOV1Gzbt30Bne7tmqIO9/view?usp=sharing">
           <button
             className="bg-gradient-to-r from-pink-500 to-yellow-500 
         transform transition-transform duration-300 hover:scale-105 

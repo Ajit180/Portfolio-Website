@@ -55,7 +55,7 @@ const techCategories = [
 
 const TechStackSVG = () => {
   return (
-    <div className="bg-black text-white py-12">
+    <div className="py-12">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Technical Skills</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">

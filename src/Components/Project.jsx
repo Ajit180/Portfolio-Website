@@ -1,7 +1,7 @@
-import React from "react";
 import messageslackimage from '../assets/message-Slack.png'
 import EdutechImage from '../assets/edu-website.png'
 import cryptoImage from '../assets/crypto-track.png'
+import useThemeStore from '../store/ThemeChange';
 
 const Project = () => {
    
@@ -33,20 +33,20 @@ const Project = () => {
       
       ];
       
-      
+    const isDark = useThemeStore((state)=>state.isDark);
 
   return (
-    <div className="bg-black text-white py-15" id="Project">
+    <div className="py-15" id="Project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects.map(projects=>(
-                <div className="bg-gray-800 p-6 rounded-lg hover:shadow-lg
-                transform transition-transform duration-300 hover:scale-105">
+                <div className={`p-6 rounded-lg transform transition-transform duration-300
+                 hover:scale-105 ${isDark?"bg-gray-800 hover:shadow-green-400/10":"bg-gray-100 text-black hover:shadow-blue-400/10"}`}>
                     <img src={projects.image} alt={projects.name} className="rounded-lg mb-4
                     w-full h-48 object-cover" />
                     <h3 className="text-2xl font-bold mb-2">{projects.name}</h3>
-                    <p className="text-gray-400 mb-4">{projects.technologies.join(", ")}</p>
+                    <p className={`${isDark ? "text-gray-400" : "text-black"} mb-4`}>{projects.technologies.join(", ")}</p>
                     <div className="flex sm:flex-col  md:flex-row space-x-3">
                     <a className="inline-block bg-gradient-to-r from-green-400 to-blue-400
                     text-white px-4 py-2 rounded-full" href={projects.githubLink}

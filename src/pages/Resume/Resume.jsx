@@ -20,6 +20,7 @@ const Resume = () => {
           <embed
             className="m-auto h-100 border rounded-lg md:w-250 md:h-200"
             src="https://testbucketajit10045.s3.eu-north-1.amazonaws.com/Ajit_Yadav.pdf"
+
             type="application/pdf"
           />
         </div>

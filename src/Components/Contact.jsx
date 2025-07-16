@@ -6,7 +6,7 @@ import { fadein } from "../varients";
 const Contact = () => {
   return (
     <motion.div className="py-5" id="Contact"
-        variants={fadein("left",0.2)}
+        variants={fadein("up",0.2)}
      initial="hidden"
      whileInView={"show"}
      viewport={{once:false , amount:0.7}}

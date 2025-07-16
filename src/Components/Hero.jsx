@@ -1,5 +1,6 @@
-import React from "react";
 import heroimage from "../assets/Hero.png";
+import { motion } from "motion/react";
+import { fadein } from "../varients";
 
 const Hero = () => {
 
@@ -8,7 +9,12 @@ const Hero = () => {
     window.location.href = `mailto:${email}`;
   }
   return (
-    <div className="text-center py-18" id="Home">
+    <motion.div className="text-center py-18" id="Home"
+      variants={fadein("up",0.4)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{once:false , amount:0.7}}
+    >
       <img
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
        transition-transform duration-300 hover:scale-105"
@@ -34,17 +40,17 @@ const Hero = () => {
           Contact Me
         </button>
 
-        <a href="https://drive.google.com/file/d/15gXkQbkGkumqMOV1Gzbt30Bne7tmqIO9/view?usp=sharing">
+        <a href="/resume">
           <button
             className="bg-gradient-to-r from-pink-500 to-yellow-500 
         transform transition-transform duration-300 hover:scale-105 
         px-4 py-2 rounded-full w-full md:w-auto"
           >
-            Resume
+            View Resume
           </button>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

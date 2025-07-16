@@ -2,6 +2,8 @@ import messageslackimage from '../assets/message-Slack.png'
 import EdutechImage from '../assets/edu-website.png'
 import cryptoImage from '../assets/crypto-track.png'
 import useThemeStore from '../store/ThemeChange';
+import { motion } from 'motion/react';
+import { fadein } from '../varients';
 
 const Project = () => {
    
@@ -33,10 +35,15 @@ const Project = () => {
       
       ];
       
-    const isDark = useThemeStore((state)=>state.isDark);
+    const {isDark} = useThemeStore();
 
   return (
-    <div className="py-15" id="Project">
+    <motion.div className="py-15" id="Project"
+     variants={fadein("up",0.2)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{once:false , amount:0.7}}
+    >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -61,7 +68,7 @@ const Project = () => {
             ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

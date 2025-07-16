@@ -1,9 +1,15 @@
-import React from "react";
 import {FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { motion } from "motion/react";
+import { fadein } from "../varients";
 
 const Footer = () => {
   return (
-    <footer className="py-8">
+    <motion.footer className="py-8"
+       variants={fadein("up",0.2)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{once:false , amount:0.7}}
+    >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-4">
           <div className="flex-1 mb-4 md:mb-0">
@@ -47,7 +53,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

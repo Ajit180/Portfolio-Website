@@ -1,26 +1,22 @@
 import React from 'react'
-import { Briefcase } from "lucide-react";
+import { Briefcase, Info } from "lucide-react";
 import table  from '../assets/table.jpg'
 
 const Experiance = () => {
   const experiences = [
     {
       id: 1,
-      role: "Frontend Developer",
-      company: "Globex Corporation",
-      duration: "2018 - 2019",
+      role: "Full Stack Developer",
+      company: "Labmantix",
+      Info:"",
+      duration: "Mar 2025 - May 2025",
     },
     {
       id: 2,
-      role: "Backend Developer",
-      company: "Vehement Capital Partners",
-      duration: "2019 - 2020",
-    },
-    {
-      id: 3,
-      role: "Marketing",
-      company: "Wonka Industries",
-      duration: "2020 - Present",
+      role: "Frontend Developer",
+      company: "Innovation hub",
+      Info:"",
+      duration: "Jan 2023 - march 2023",
     },
   ];
 

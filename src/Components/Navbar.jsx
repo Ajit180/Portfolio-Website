@@ -1,23 +1,91 @@
-import React from 'react'
+import { FaHome, FaUser, FaEnvelope, 
+  FaProjectDiagram, FaSun, FaMoon,FaLinkedin ,FaGithub} from "react-icons/fa"; 
+  import { IoMdClose } from "react-icons/io";
+import { GoFile } from "react-icons/go";
+import { AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
+import useThemeStore from "../store/ThemeChange";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <nav className='bg-black text-white px-8 md:px-16 lg:px-24'>
-    <div className='container py-2 flex justify-center md:justify-between items-center'>
-            <div className='text-2xl font-bold hidden md:inline'>Ajit</div>
-            <div className='space-x-6'>
-                <a href="#home" className='hover:text-gray-400'>Home</a>
-                <a href="#About" className='hover:text-gray-400'>About</a>
-                <a href="#Project" className='hover:text-gray-400'>Project</a>
-                <a href="#Experience" className='hover:text-gray-400'>Experience</a>
-                <a href="#Contacts" className='hover:text-gray-400'>Contacts</a>
-            </div>
-            <button className='bg-gradient-to-r from-green-400 to-blue-500 hidden md:inline
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Contact Me</button>
-        
-    </div>
-    </nav>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
+  const {isDark,toggleTheme} = useThemeStore()
 
-export default Navbar
+  return (
+    <div className={"p-4 w-full z-10"}>
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
+        {/* Logo */}
+        <Link to={'/'}>
+        <h1  className="text-2xl font-bold">Ajit Yadav</h1>
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-6 text-lg">
+          <a href="/" className="flex items-center space-x-2 hover:text-blue-400">
+            <FaHome /> <span>Home</span>
+          </a>
+           <a href="#Project" className="flex items-center space-x-2 hover:text-blue-400">
+            <FaProjectDiagram /> <span>Projects</span>
+          </a>
+           <a href="/resume" className="flex items-center space-x-2 hover:text-blue-400">
+            <GoFile /> <span>Resume</span>
+          </a>
+         <a href="https://github.com/ajit180" className="flex items-center space-x-2 hover:text-blue-400">
+            <FaGithub /> <span>Github</span>
+          </a>
+           <a href="https://www.linkedin.com/in/ajit180/" className="flex items-center space-x-2 hover:text-blue-400">
+            <FaLinkedin /> <span>LinkedIn</span>
+          </a>
+          {/* <a href="#experience" className="flex items-center space-x-2 hover:text-blue-400">
+            <MdWork /> <span>Experience</span>
+          </a> */}
+         
+          {/* Theme Toggle */}
+          <button
+             onClick={toggleTheme}
+              className="p-2 rounded-full hover:text-blue-400"
+                title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+               >
+              {isDark ? <FaSun size={20} /> : <FaMoon size={20} />}
+          </button>
+
+        </div>
+
+        {/* Mobile Menu Button */}
+        {
+        <button className="md:hidden"  onClick={() => setIsOpen(!isOpen)}>
+
+          {isOpen?<IoMdClose size={30}/>:<AiOutlineMenu size={30}/>}
+        </button>
+}
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-gray-800 text-white text-center mt-4 space-y-3 p-4">
+          <a href="#Home" className="flex justify-center items-center space-x-2 hover:text-blue-400">
+            <FaHome /> <span>Home</span>
+          </a>
+          <a href="#Project" onClick={()=>setIsOpen(!isOpen)} className="flex justify-center items-center space-x-2 hover:text-blue-400">
+            <FaProjectDiagram /> <span>Projects</span>
+          </a>
+          {/* <a href="#experience" className="flex justify-center items-center space-x-2 hover:text-blue-400">
+            <MdWork /> <span>Experience</span>
+          </a> */}
+          <a href="#resume"  onClick={()=>setIsOpen(!isOpen)} className="flex justify-center items-center space-x-2 hover:text-blue-400">
+            <GoFile /> <span>Resume</span>
+          </a>
+          <a href="https://github.com/ajit180" onClick={()=>setIsOpen(!isOpen)} className="flex justify-center items-center space-x-2 hover:text-blue-400">
+             <FaGithub /> <span>Github</span>
+          </a>
+           <a href="https://www.linkedin.com/in/ajit180/" onClick={()=>setIsOpen(!isOpen)} className="flex justify-center items-center space-x-2 hover:text-blue-400">
+              <FaLinkedin /> <span>LinkedIn</span>
+          </a>
+            
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Navbar;

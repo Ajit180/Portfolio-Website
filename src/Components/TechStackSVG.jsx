@@ -1,4 +1,5 @@
-import React from "react";
+import { motion } from "motion/react";
+import { fadein } from "../varients";
 
 const techCategories = [
     {
@@ -55,7 +56,12 @@ const techCategories = [
 
 const TechStackSVG = () => {
   return (
-    <div className="py-12">
+    <motion.div className="py-12"
+      variants={fadein("up",0.2)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{once:false , amount:0.7}}
+    >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Technical Skills</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -78,7 +84,7 @@ const TechStackSVG = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

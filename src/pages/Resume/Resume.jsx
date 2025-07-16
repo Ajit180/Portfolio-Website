@@ -7,13 +7,13 @@ const Resume = () => {
       <Navbar />
       <div>
         <div>
-          <h1>Resume</h1>
-          <p>
+          {/* <h1 className="font-xl justify-center">Resume</h1> */}
+          {/* <p>
             Download my complete resume or view it directly in your browser.
             Updated with my latest experience and skills.
           </p>
           <button>View full Page</button>
-          <button>Download page</button>
+          <button>Download page</button> */}
         </div>
         <div className="flex flex-row">
           {/* PDF viewer using object tag */}

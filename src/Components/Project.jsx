@@ -1,15 +1,25 @@
 import messageslackimage from '../assets/message-Slack.png'
 import EdutechImage from '../assets/edu-website.png'
 import cryptoImage from '../assets/crypto-track.png'
-import useThemeStore from '../store/ThemeChange';
+import useThemeStore from '../store/ThemeChange'
+import ecommerce from '../assets/ecommerce.png'
 import { motion } from 'motion/react';
 import { fadein } from '../varients';
 
 const Project = () => {
    
     const projects = [
-        {
+           {
           id: 1,
+          name: "Ecommerce With Admin Dashboard(Working)",
+          technologies: ["React.js", "Node.js", "Express", "MongoDB", "AWS S3"],
+          image: ecommerce,  // Update with actual image path
+          githubLink: "https://github.com/Ajit180/StiMart",
+          liveLink:"https://stimart-frontend.vercel.app/"
+        },
+      ,
+        {
+          id: 2,
           name: "Messaging Slack",
           technologies: ["React.js", "Node.js", "Express", "MongoDB", "Socket.IO", "AWS S3"],
           image: messageslackimage,  // Update with actual image path
@@ -17,7 +27,7 @@ const Project = () => {
           liveLink:"https://frontend-message-slack.vercel.app/auth/signin"
         },
         {
-          id: 2,
+          id: 3,
           name: "Crypto Tracker",
           technologies: ["React", "Taiwind", "API"],
           image: cryptoImage,  // Update with actual image path
@@ -25,7 +35,7 @@ const Project = () => {
           liveLink:"https://crypto-tracker-three-sigma.vercel.app/"
         },
         {
-          id: 3,
+          id: 4,
           name: "Edutech Website",
           technologies: ["HTML", "CSS", "JavaScript"],
           image: EdutechImage,  // Update with actual image path

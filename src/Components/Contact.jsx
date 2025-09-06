@@ -34,34 +34,45 @@ const Contact = () => {
                </div>
           </div>
           <div className="flex-1 w-full ">
-             <form className="space-y-4">
+             <form className="space-y-4" action="https://formspree.io/f/mnnblnky" method="post">
                 <div>
                   <label htmlFor="name" className="block mb-2">Your Name</label>
                   <input type="text" 
+                   name="name"
                    className="w-full p-2 rounded bg-gray-800 border border-gray-600 
                    focus:outline-none focus:border-green-400"
                    placeholder="Enter Your Name"
+                   required
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block mb-2">Your Email</label>
                   <input type="text" 
+                   name="email"
                    className="w-full p-2 rounded bg-gray-800 border border-gray-600 
                    focus:outline-none focus:border-green-400"
                    placeholder="Enter Your Email"
+                   required
                   />
                 </div>
                 <div>
                   <label htmlFor="message" className="block mb-2">Message</label>
                   <textarea type="text" 
+                  name="message"
                    className="w-full p-2 rounded bg-gray-800 border border-gray-600 
                    focus:outline-none focus:border-green-400"
                    rows={5}
                    placeholder="Enter Your Message"
+                   required
                   />
                 </div>
-                <button className='bg-gradient-to-r from-green-400 to-blue-500 hidden md:inline
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Send</button>
+                <div>
+                         <button
+                          type="submit"
+                          className='bg-gradient-to-r from-green-400 to-blue-500 hidden md:inline
+            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full' >Send</button>
+                </div>
+               
                 
              </form>
           </div>
